@@ -151,11 +151,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BSpline.cpp" />
+    <ClCompile Include="DiskDrawingService.cpp" />
     <ClCompile Include="LightConstants.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="NURBSSurface.cpp" />
+    <ClCompile Include="TrimmedBSpline.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BSpline.h" />
+    <ClInclude Include="DiskDrawingService.h" />
     <ClInclude Include="LightConstants.h" />
+    <ClInclude Include="NURBSSurface.h" />
+    <ClInclude Include="SPLINE_TYPE.h" />
+    <ClInclude Include="TrimmedBSpline.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
