@@ -98,7 +98,7 @@ void display(void)
 		glutPostRedisplay();
 		break;
 	case 7:
-		DiskDrawingService::DrawWireDisk();
+		DiskDrawingService::DrawInterpolatedDisk();
 		glutPostRedisplay();
 		break;
 	default:

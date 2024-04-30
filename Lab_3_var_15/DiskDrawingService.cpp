@@ -19,3 +19,13 @@ void DiskDrawingService::DrawWireDisk()
 	gluDisk(gluNewQuadric(), 0, 1.5, 20, 20);
 	glPopMatrix();
 }
+
+void DiskDrawingService::DrawInterpolatedDisk()
+{
+	glPushMatrix();
+	glTranslatef(3, 2, 0);
+	glRotatef(90, 0.0, 0.9, 0.9);
+	glShadeModel(GL_SMOOTH);//тут інтерполяційне зафарбування
+	gluDisk(gluNewQuadric(), 0, 1.5, 20, 20);
+	glPopMatrix();
+}
